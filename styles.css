@@ -1,0 +1,171 @@
+/* ------------ FestFlow AI Pro: DARK MODERN THEME ------------- */
+
+/* BASE BODY AND BACKGROUND */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141820;   /* Deep blue-black */
+  color: #f2f6fd;
+}
+
+/* SIDEBAR */
+.css-1d391kg .css-1v0mbdj, .stSidebar {
+  background-color: #181c25 !important;
+  border-right: 1.5px solid #292f3e;
+  color: #f2f6fd !important;
+}
+
+/* SIDEBAR HIGHLIGHT */
+.css-17eq0hr {
+  background-color: #23273a !important;
+  border-left: 4px solid #14a7ff;
+}
+
+/* BUTTONS */
+.stButton > button {
+  border: 2px solid #14a7ff;
+  border-radius: 24px;
+  padding: 10px 26px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #e0f7fa;
+  background-color: #192235;
+  transition: all 0.22s cubic-bezier(.13,.67,.44,1);
+}
+.stButton > button:hover {
+  background-color: #14a7ff;
+  color: #192235;
+}
+.stButton > button[kind="primary"] {
+  background-color: #26c281;
+  color: #181c25;
+  border: none;
+}
+.stButton > button[kind="primary"]:hover {
+  background-color: #1b9961;
+  color: #f2f6fd;
+}
+
+/* CARD-LIKE CONTAINERS */
+[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
+  border: 1.5px solid #303545;
+  border-radius: 12px;
+  background-color: #202436;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(20,29,50,0.16);
+  transition: box-shadow 0.3s;
+}
+[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"]:hover {
+  box-shadow: 0 10px 32px 0 rgba(20,29,50,0.33);
+}
+
+/* STATUS CHIPS WITH DARK BACKGROUNDS */
+.status-chip {
+  display: inline-block;
+  min-width: 80px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: #222937;
+  color: #f2f6fd !important;
+}
+.status-pending   { background-color: #fe9500 !important; color: #222; }
+.status-approved  { background-color: #21a475 !important; color: #fff; }
+.status-paid      { background-color: #156fa6 !important; color: #fff; }
+.status-rejected  { background-color: #eb3941 !important; color: #fff; }
+.status-closed    { background-color: #6135bb !important; color: #fff; }
+
+/* METRICS */
+[data-testid="stMetricLabel"] {
+  font-size: 1.05em;
+  color: #ccccd1;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  color: #e2ebff;
+  margin-top: 1.5rem;
+}
+h4, h5, h6 {
+  color: #b5cffd;
+}
+.stSubheader {
+  margin-top: 2rem;
+  border-bottom: 2px solid #292f3e;
+  padding-bottom: 7px;
+}
+
+/* FORMS */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  border-radius: 10px !important;
+  border: 1.3px solid #475169 !important;
+  padding: 10px 12px !important;
+  font-size: 1rem !important;
+  background-color: #1c2231 !important;
+  color: #e2e6ed !important;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  background-color: #212738;
+  font-weight: bold;
+  text-align: left;
+  padding: 12px;
+  color: #87bafd;
+}
+table td {
+  padding: 11px;
+  border-bottom: 1.1px solid #343c50;
+  color: #f2f6fd;
+}
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #192235;
+}
+::-webkit-scrollbar-thumb {
+  background: #252b38;
+  border-radius: 6px;
+}
+
+/* LINKS */
+a, a:visited {
+  color: #77b8fe;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #323648;
+  margin: 30px 0 19px 0;
+}
+
+.stAlert {
+  border-radius: 8px !important;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 600px) {
+  .stButton > button,
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 1.1em !important;
+    min-width: 98%;
+  }
+  h1, h2 {
+    font-size: 1.2em;
+  }
+}
